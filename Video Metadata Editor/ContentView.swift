@@ -2,8 +2,8 @@ import SwiftUI
 import Foundation
 import UniformTypeIdentifiers
 
-struct EncodeDate: View {
-    @StateObject private var viewModel = EncodeDate()
+struct ContentView: View {
+    @StateObject private var viewModel = VideoMetadataViewModel()
     @Environment(\.colorScheme) var systemColorScheme
     @State private var showingAbout = false
     
