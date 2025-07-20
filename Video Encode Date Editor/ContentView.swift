@@ -188,7 +188,7 @@ struct AboutView: View {
                 .frame(width: 64, height: 64)
             
             VStack(spacing: 8) {
-                Text("Video Metadata Editor")
+                Text("Video Encode Date Editor")
                     .font(.title)
                     .fontWeight(.bold)
                 
@@ -212,7 +212,7 @@ struct AboutView: View {
                     HStack {
                         Image(systemName: "checkmark.circle.fill")
                             .foregroundColor(.green)
-                        Text("Batch video metadata processing")
+                        Text("Batch video encode date processing")
                     }
                     HStack {
                         Image(systemName: "checkmark.circle.fill")
@@ -238,10 +238,10 @@ struct AboutView: View {
             VStack(spacing: 4) {
                 Text("FFmpeg & FFprobe are bundled within the app:")
                 
-                Text("FFmpeg: \(ffmpegVersion)")
+                Text("\(ffmpegVersion)")
                     .font(.caption)
                     .foregroundColor(.secondary)
-                Text("FFprobe: \(ffprobeVersion)")
+                Text("\(ffprobeVersion)")
                     .font(.caption)
                     .foregroundColor(.secondary)
             }
